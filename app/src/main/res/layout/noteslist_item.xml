@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 根布局为LinearLayout，水平方向排列，设置了宽度、外边距、背景色等属性 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="180dp"
+    android:background="@drawable/img">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:textColor="@color/black"
+            android:id="@android:id/text1"
+            android:textSize="30sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/texttype"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="end"
+            android:paddingLeft="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+    </LinearLayout>
+    <!-- 第二个TextView，可能用于展示时间相关内容，权重为2，占据相对更宽的空间 -->
+    <LinearLayout
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:textColor="@color/black"
+            android:id="@+id/text_time"
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="end"
+            android:paddingLeft="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
